@@ -10,8 +10,10 @@ class CarsList extends Component{
     showList() {
         return this.props.cars.map((car) => {
             return(
+
                 <li onClick={() => this.props.select(car)} 
                 key={car.id} >{car.model}</li>
+
             );
         });
     }
@@ -33,6 +35,10 @@ function mapStateToProps (state) {
 }
 
 function matchDispatchToProps(dispatch) {
-    return bindActionCreators({select: select}, dispatch);
+    return bindActionCreators({
+        select: select
+    }, dispatch);
 } 
+
+
 export default connect(mapStateToProps, matchDispatchToProps)(CarsList);

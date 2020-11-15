@@ -7,10 +7,12 @@ import WebPage from './сomponents/webPage';
 
 
 // * Использовали главный Reducer для этого
+
+// * allReducers используется для объединения всех редьюсеров
 const store = createStore(allReducers);
 
 ReactDOM.render(
-  // * Связывает провайдер и лог часть
+  // * Провайдер нужен для того, чтобы передать store в приложение
   <Provider store={store}> 
     <WebPage/>
   </Provider>, 

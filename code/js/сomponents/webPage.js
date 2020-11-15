@@ -1,7 +1,7 @@
 import React from 'react';
 import CarsList from '../containers/car-list';
 
-//* Это компонент, чтобы вывести
+//* Это компонент, чтобы вывести данные из store
 
 const WebPage = () => (
     <div>
