@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import CarsReducers from './car';
+import CarsReducers from '../api/car';
 
 
 // * Все Reducer'ы нужно объедиить в один
