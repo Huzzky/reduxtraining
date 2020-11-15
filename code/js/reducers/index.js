@@ -1,10 +1,9 @@
 import {combineReducers} from 'redux';
-import CarsReducers from '../api/car';
+import CarsReducers from '../data/car';
 
 
 // * Все Reducer'ы нужно объедиить в один
 const allReducers = combineReducers({
-    // ? Это он
     cars: CarsReducers,
 });
 
